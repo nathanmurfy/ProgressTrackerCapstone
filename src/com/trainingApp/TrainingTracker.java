@@ -2,11 +2,14 @@ package com.trainingApp;
 
 import java.io.File;
 import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 
 public class TrainingTracker {
-    // Need to find a file path that works
+
     File fileCreator = new File("");
 
-    // Check if local dates line up
     private LocalDate localDate = LocalDate.now();
+
+    private DateTimeFormatter dateTimeFormatter = DateTimeFormatter.ofPattern("dd MMMM yyyy");
+    private String currentDate = localDate.format(dateTimeFormatter);
 }
