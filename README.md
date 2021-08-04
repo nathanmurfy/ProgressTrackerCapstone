@@ -11,6 +11,7 @@ On line 11 in TrainingTracker I used the localDate import to retrieve the local 
 exactly was the workout, and it makes the files easier to place in order. I then followed up the localDate import
 with the DateTimeFormatter import. Here I set the default pattern of (mm / dd / yyyy) to (dd / mm / yyyy).
 In this block of code I also made the variable "currentDate" carry the format I made with the current date.
+I was not sure how to go about this so I found a few examples online. Took bits that fit my needs and created what I wanted.
 
 Line 18 is where I am staring my class that will hold all my exercises. I have made an array list to hold all the
 exercises and have split them into separate muscle groups. I am trying to think of a way to put them into separate Lists and
