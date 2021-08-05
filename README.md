@@ -1,8 +1,10 @@
 Capstone Project
 
-My initial idea for my project was to make something i could use in the future, so i decided to make a tracking app that
+My initial idea for my project was to make something I could use in the future, so I decided to make a tracking app that
 would allow you to track your workout for the day and to be able to save the files to keep record of any progress you make.
-
+The console will ask you how many reps, sets, weight used, the exercise and what body
+part was trained. You will then be able to keep track of any progress you
+make and keep them on file.
 
 I am starting off with making my three classes named "Main", "TrainingExercises" and "TrainingTracker". The main
 will be for calling methods, I will have TrainingExercises for my variables and getters and setters adn the
@@ -24,3 +26,12 @@ I will be using the getters and setters in the main to retrieve the information 
 and the name of exercise they did.
 
 Ive updated my Main and TrainingExercises, I got a few things to print to the console but am unable to interact with it.
+At first I started off with TrainingTracker and tried to rush through with what I knew, but I took a step back, went and had a look at the main
+and the TrainingExercises class and did what I could there. I updated names, added a few lines that I missed and my application
+started running how I wanted. Now im going to work out the date and time function so you know the date of the workout. I will need to print it
+to the console first.
+
+After I get everything printed to the console, I will start to figure out how to print it all to a savable file. After I work that problem out
+I will think about adding a calorie tracker, or perhaps just a meal tracker. This way you can remember the meals you had on the day of the
+training session and it will be able to help you keep a steady diet. That idea is not set in stone and may make a few tweaks to it but right now 
+I am hoping to be able to get that done.
