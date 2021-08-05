@@ -11,6 +11,7 @@ public class Main {
 	System.out.println("Welcome user!. This program helps track workout progress.");
 	System.out.println("Please enter what exercise you are doing.");
 
+
 	 TrainingExercises trainingExercise = new TrainingExercises();
 	 trainingExercise.setExercise();
 

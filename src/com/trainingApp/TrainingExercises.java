@@ -7,6 +7,21 @@ public class TrainingExercises {
     private int sets;
     private String bodyPart;
 
+    TrainingExercises(){
+        exercise = "New exercise";
+        weight = 0;
+        reps = 0;
+        sets = 0;
+        bodyPart = "Arms";
+    }
+    TrainingExercises(String exercise, int weight, int reps, int sets, String bodyPart){
+        this.exercise = exercise;
+        this.weight = weight;
+        this.reps = reps;
+        this.sets = sets;
+        this.bodyPart = bodyPart;
+    }
+
     public String getExercise() {
         return exercise;
     }
