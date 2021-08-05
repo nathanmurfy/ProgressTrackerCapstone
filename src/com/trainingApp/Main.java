@@ -22,7 +22,7 @@ public class Main {
     }
 
     public static TrainingExercises newTrainingSession(){
-    	Scanner sc = new Scanner(System.in);
+    	Scanner scanner = new Scanner(System.in);
     	String exercise;
     	String weight;
     	int weightAsInt;
@@ -31,19 +31,22 @@ public class Main {
     	String sets;
     	int setsAsInt;
     	String bodyPart;
+
     	System.out.println("Enter Exercise: ");
-    	exercise = sc.nextLine();
+    	exercise = scanner.nextLine();
     	System.out.println("Enter weight: ");
-    	weight = sc.nextLine();
+    	weight = scanner.nextLine();
     	System.out.println("Enter reps: ");
-    	reps = sc.nextLine();
+    	reps = scanner.nextLine();
     	System.out.println("Enter sets: ");
-    	sets = sc.nextLine();
+    	sets = scanner.nextLine();
     	System.out.println("Enter body part trained: ");
-    	bodyPart = sc.nextLine();
+    	bodyPart = scanner.nextLine();
+
     	weightAsInt = Integer.parseInt(weight);
     	repsAsInt = Integer.parseInt(reps);
     	setsAsInt = Integer.parseInt(sets);
+
     	return new TrainingExercises();
 	}
 

@@ -22,3 +22,5 @@ In TrainingExercises.java I made my getters and setters. I also added
 the body part category to see if I could do that as well.
 I will be using the getters and setters in the main to retrieve the information from the user about what reps, sets, weights, body part
 and the name of exercise they did.
+
+Ive updated my Main and TrainingExercises, I got a few things to print to the console but am unable to interact with it.
