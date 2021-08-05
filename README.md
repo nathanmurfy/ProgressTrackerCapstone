@@ -16,3 +16,8 @@ I was not sure how to go about this so I found a few examples online. Took bits 
 Line 18 is where I am staring my class that will hold all my exercises. I have made an array list to hold all the
 exercises and have split them into separate muscle groups. I am trying to think of a way to put them into separate Lists and
 still be able to call them together, because you usually train more than one muscle group for the day.
+
+In TrainingExercises.java I made my getters and setters. I also added
+the body part category to see if I could do that as well.
+I will be using the getters and setters in the main to retrieve the information from the user about what reps, sets, weights, body part
+and the name of exercise they did.

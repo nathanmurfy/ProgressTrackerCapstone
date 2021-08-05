@@ -6,7 +6,7 @@ public class Main {
 
     public static void main(String[] args) {
 
-    	Scanner scanner = new Scanner(System.in);
+    	Scanner sc = new Scanner(System.in);
 
 	System.out.println("Welcome user!. This program helps track workout progress.");
 	System.out.println("Please enter what exercise you are doing.");
