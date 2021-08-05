@@ -12,6 +12,7 @@ public class Main {
 	System.out.println("Please enter what exercise you are doing.");
 
 	TrainingExercises liftSession = new TrainingExercises();
+    liftSession=newTrainingSession();
 
 	System.out.println("The exercise you did was: " + liftSession.getExercise());
 	System.out.println("The weight you did was: " + liftSession.getWeight());
@@ -46,8 +47,16 @@ public class Main {
     	weightAsInt = Integer.parseInt(weight);
     	repsAsInt = Integer.parseInt(reps);
     	setsAsInt = Integer.parseInt(sets);
+//TrainingExercises tempResult=new TrainingExercises();
+//tempResult.setSets(setsAsInt);
+//tempResult.setReps(repsAsInt);
+//tempResult.setBodyPart(bodyPart);
+//tempResult.setWeight(weightAsInt);
+//tempResult.setExercise(exercise);
+//
+//return tempResult;
 
-    	return new TrainingExercises();
+    	return new TrainingExercises(exercise,weightAsInt,repsAsInt,setsAsInt,bodyPart);
 	}
 
 }
