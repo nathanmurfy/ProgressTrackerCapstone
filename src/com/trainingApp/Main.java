@@ -1,8 +1,12 @@
 package com.trainingApp;
 
+import java.util.Scanner;
+
 public class Main {
 
     public static void main(String[] args) {
+
+    	Scanner scanner = new Scanner(System.in);
 
 	System.out.println("Welcome user!. This program helps track workout progress.");
 	System.out.println("Please enter what exercise you are doing.");
@@ -25,6 +29,10 @@ public class Main {
 	 TrainingExercises sets = new TrainingExercises();
 	 sets.setSets();
 
+	 System.out.println("Please enter the body part you trained");
+
+	 TrainingExercises bodyPart = new TrainingExercises();
+	 bodyPart.setBodyPart();
 
     }
 
