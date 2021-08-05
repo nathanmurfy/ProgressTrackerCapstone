@@ -11,30 +11,40 @@ public class Main {
 	System.out.println("Welcome user!. This program helps track workout progress.");
 	System.out.println("Please enter what exercise you are doing.");
 
+	TrainingExercises liftSession = new TrainingExercises();
 
-	 TrainingExercises trainingExercise = new TrainingExercises();
-	 trainingExercise.setExercise();
-
-	 System.out.println("Please enter the weight you did.");
-
-	 TrainingExercises weight = new TrainingExercises();
-	 weight.setWeight();
-
-	 System.out.println("Please enter the amount reps you did.");
-
-	 TrainingExercises reps = new TrainingExercises();
-	 reps.setReps();
-
-	 System.out.println("Please enter how many sets you did.");
-
-	 TrainingExercises sets = new TrainingExercises();
-	 sets.setSets();
-
-	 System.out.println("Please enter the body part you trained");
-
-	 TrainingExercises bodyPart = new TrainingExercises();
-	 bodyPart.setBodyPart();
+	System.out.println("The exercise you did was: " + liftSession.getExercise());
+	System.out.println("The weight you did was: " + liftSession.getWeight());
+	System.out.println("The amount of reps you did were: " + liftSession.getReps());
+	System.out.println("The amount of sets you did was: " + liftSession.getSets());
+	System.out.println("The body part you trained was: " + liftSession.getBodyPart());
 
     }
+
+    public static TrainingExercises newTrainingSession(){
+    	Scanner sc = new Scanner(System.in);
+    	String exercise;
+    	String weight;
+    	int weightAsInt;
+    	String reps;
+    	int repsAsInt;
+    	String sets;
+    	int setsAsInt;
+    	String bodyPart;
+    	System.out.println("Enter Exercise: ");
+    	exercise = sc.nextLine();
+    	System.out.println("Enter weight: ");
+    	weight = sc.nextLine();
+    	System.out.println("Enter reps: ");
+    	reps = sc.nextLine();
+    	System.out.println("Enter sets: ");
+    	sets = sc.nextLine();
+    	System.out.println("Enter body part trained: ");
+    	bodyPart = sc.nextLine();
+    	weightAsInt = Integer.parseInt(weight);
+    	repsAsInt = Integer.parseInt(reps);
+    	setsAsInt = Integer.parseInt(sets);
+    	return new TrainingExercises();
+	}
 
 }
