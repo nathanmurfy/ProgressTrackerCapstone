@@ -27,25 +27,23 @@ public class TrainingTracker {
         selection = scanner.nextInt();
         return selection;
     }
-    public static void DateAndTime(){
-        LocalDate localDate = LocalDate.now();//For reference
+
+    public static void DateAndTime() {
+        LocalDate localDate = LocalDate.now();
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd LLLL yyyy");
         String formattedString = localDate.format(formatter);
 
         System.out.println(LocalDate.now().format(DateTimeFormatter.ofPattern("dd MMMM yyyy")));
     }
 
-    public static void printer(){
-        try {
-            BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter("Output.txt"));
-            bufferedWriter.write("Saving to a file");
-            bufferedWriter.close();
-        } catch (IOException e){
-            e.printStackTrace();
-        }
+    public static String printer(String output) throws IOException {
+        String filenameStr = "Output.txt";
+
+        BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter("Output.txt"));
+        bufferedWriter.write(output);
+        bufferedWriter.close();
+
+        return filenameStr;
     }
-
-
-
 }
 
