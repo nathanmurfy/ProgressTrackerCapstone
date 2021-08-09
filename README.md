@@ -4,7 +4,15 @@ My initial idea for my project was to make something I could use in the future, 
 would allow you to track your workout for the day and to be able to save the files to keep record of any progress you make.
 The console will ask you how many reps, sets, weight used, the exercise and what body
 part was trained. You will then be able to keep track of any progress you
-make and keep them on file.
+make and keep them on file. I try to keep track of my progress when it comes to lifting but I struggle having to write everything down
+on pieces of paper and then storing it all. Having to look through finding specific dates but
+with this app you can easily store all progress into a file and keep those files for ever without being worried to 
+lose them. It's much more convenient, and it is fun to use.
+
+The target audience would be for anybody who trains, no matter how consistently or how hard you train, its good to keep progress.
+You always want to know if you are making progress or at a plateau so keeping your progression
+stored is very valuable. This way you can change things if something is not working out or
+you are not seeing any progression.
 
 I am starting off with making my three classes named "Main", "TrainingExercises" and "TrainingTracker". The main
 will be for calling methods, I will have TrainingExercises for my variables and getters and setters adn the
@@ -36,6 +44,9 @@ I will think about adding a calorie tracker, or perhaps just a meal tracker. Thi
 training session and it will be able to help you keep a steady diet. That idea is not set in stone and may make a few tweaks to it but right now 
 I am hoping to be able to get that done.
 
-I wanted to add a menu for the body parts you could train so I made one in TrainingTracker. This gives the user 5 options on which body part to train.
-The reason I asked the user this twice is because sometimes when doing one exercise you are training more than just the targeted body part.
+I wanted to add a menu for the body parts you could train, so I made one in TrainingTracker. This used breaks. This gives the user 5 options on which body part to train.
+The reason I asked the user this twice is that sometimes when doing one exercise you are training more than just the targeted body part.
 For example, when you are bench pressing you would do that on a chest day, but bench pressing works the chest, front deltoid and the triceps.
+
+I am looking at putting in some IO exceptions if I see fit but am not sure where they will go yet. Always good to have a 
+back-up plan in the app if something goes wrong.
