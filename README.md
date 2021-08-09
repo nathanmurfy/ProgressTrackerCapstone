@@ -25,13 +25,17 @@ the body part category to see if I could do that as well.
 I will be using the getters and setters in the main to retrieve the information from the user about what reps, sets, weights, body part
 and the name of exercise they did.
 
-Ive updated my Main and TrainingExercises, I got a few things to print to the console but am unable to interact with it.
-At first I started off with TrainingTracker and tried to rush through with what I knew, but I took a step back, went and had a look at the main
+I've updated my Main and TrainingExercises, I got a few things to print to the console but am unable to interact with it.
+At first, I started off with TrainingTracker and tried to rush through with what I knew, but I took a step back, went and had a look at the main
 and the TrainingExercises class and did what I could there. I updated names, added a few lines that I missed and my application
-started running how I wanted. Now im going to work out the date and time function so you know the date of the workout. I will need to print it
+started running how I wanted. Now im going to work out the date and time function, so you know the date of the workout. I will need to print it
 to the console first.
 
 After I get everything printed to the console, I will start to figure out how to print it all to a savable file. After I work that problem out
 I will think about adding a calorie tracker, or perhaps just a meal tracker. This way you can remember the meals you had on the day of the
 training session and it will be able to help you keep a steady diet. That idea is not set in stone and may make a few tweaks to it but right now 
 I am hoping to be able to get that done.
+
+I wanted to add a menu for the body parts you could train so I made one in TrainingTracker. This gives the user 5 options on which body part to train.
+The reason I asked the user this twice is because sometimes when doing one exercise you are training more than just the targeted body part.
+For example, when you are bench pressing you would do that on a chest day, but bench pressing works the chest, front deltoid and the triceps.
