@@ -13,14 +13,14 @@ public class Main {
     	Scanner sc = new Scanner(System.in);
 
     	LocalDate localDate = LocalDate.now();
-
     	System.out.println(localDate);
+
     	MenuData();
 	System.out.println("Welcome user!. This program helps track workout progress.");
 	System.out.println("Please enter what exercise you are doing.");
 
 	TrainingExercises liftSession;
-    liftSession=newTrainingSession();
+    liftSession = newTrainingSession();
 
 	System.out.println("The exercise you did was: " + liftSession.getExercise());
 	System.out.println("The weight you did was: " + liftSession.getWeight());

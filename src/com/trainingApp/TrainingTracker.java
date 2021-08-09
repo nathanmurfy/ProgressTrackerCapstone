@@ -1,6 +1,9 @@
 package com.trainingApp;
 
+import java.io.BufferedWriter;
 import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
@@ -50,9 +53,19 @@ public class TrainingTracker {
         System.out.println("Shoulders -4");
         System.out.println("Arms -5");
 
-        System.out.println("You selected: ");
+        System.out.println("You selected body part number: ");
         selection = scanner.nextInt();
         return selection;
+    }
+
+    public static void printer(){
+        try {
+            BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter("Output.txt"));
+            bufferedWriter.write("Saving to a file");
+            bufferedWriter.close();
+        } catch (IOException e){
+            e.printStackTrace();
+        }
     }
 
 }
