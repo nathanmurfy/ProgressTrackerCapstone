@@ -27,6 +27,13 @@ public class TrainingTracker {
         selection = scanner.nextInt();
         return selection;
     }
+    public static void DateAndTime(){
+        LocalDate localDate = LocalDate.now();//For reference
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd LLLL yyyy");
+        String formattedString = localDate.format(formatter);
+
+        System.out.println(LocalDate.now().format(DateTimeFormatter.ofPattern("dd MMMM yyyy")));
+    }
 
     public static void printer(){
         try {

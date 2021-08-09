@@ -2,8 +2,10 @@ package com.trainingApp;
 
 import java.io.IOException;
 import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 import java.util.Scanner;
 
+import static com.trainingApp.TrainingTracker.DateAndTime;
 import static com.trainingApp.TrainingTracker.MenuData;
 
 public class Main {
@@ -13,11 +15,7 @@ public class Main {
     	Scanner sc = new Scanner(System.in);
 		TrainingExercises trainingExercises = new TrainingExercises();
 
-
-
-    	LocalDate localDate = LocalDate.now();
-    	System.out.println(localDate);
-
+		DateAndTime();
     	MenuData();
 	System.out.println("Welcome user!. This program helps track workout progress.");
 	System.out.println("Please enter what exercise you are doing: ");
