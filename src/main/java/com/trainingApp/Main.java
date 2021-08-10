@@ -41,7 +41,7 @@ public class Main {
         output += "You weight you did was: " + trainingExercises.getWeight() + " KG" + "\n";
         output += "You amount of reps you did was: " + reps + " reps" + "\n";
         output += "The amount of sets you did was: " + sets + " sets" + "\n";
-        output += "The total amount was: " + reps * sets + " reps" + "\n";
+        output += getOutput(reps, sets);
 
         System.out.println(output);
 
@@ -54,6 +54,10 @@ public class Main {
         }
 
 
+    }
+
+    public static String getOutput(int reps, int sets) {
+        return "The total amount was: " + reps * sets + " reps" + "\n";
     }
 
 
