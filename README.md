@@ -4,21 +4,38 @@ My initial idea for my project was to make something I could use in the future, 
 would allow you to track your workout for the day and to be able to save the files to keep record of any progress you make.
 The console will ask you how many reps, sets, weight used, the exercise and what body
 part was trained. You will then be able to keep track of any progress you
-make and keep them on file. I try to keep track of my progress when it comes to lifting but I struggle having to write everything down
+make and keep them on file. I try to keep track of my progress when it comes to lifting, but I struggle having to write everything down
 on pieces of paper and then storing it all. Having to look through finding specific dates but
-with this app you can easily store all progress into a file and keep those files for ever without being worried to 
+with this app you can easily store all progress into a file and keep those files forever without being worried to 
 lose them. It's much more convenient, and it is fun to use.
 
-The target audience would be for anybody who trains, no matter how consistently or how hard you train, its good to keep progress.
+The target audience would be for anybody who trains, no matter how consistently or how hard you train, It's good to keep progress.
 You always want to know if you are making progress or at a plateau so keeping your progression
-stored is very valuable. This way you can change things if something is not working out or
-you are not seeing any progression.
+stored is very valuable. This way you can change things if something is not working well, or
+you are not seeing any progress with your lifts.
+
+List of features:
+- Prints to a file the exercise you did so you can save it.
+- Helps know if you are making progress or not.
+- Tells you at the end how many reps in total you are doing, "reps X sets".
+- Prints out the date of the workout, so you know what day you did the exercise and how long progression took.
+
+Implementation plan:
+- Firstly I want to start off simple, get something printed to the console.
+- I then want to start building variables, making setters and getters and a constructor.
+- Taking care of the local date method is also something I want to finish as once that has been completed I have full freedom with how I want to use it.
+- Up next, I want to start asking users questions, what exercise they did, how much weight they used ect.
+- Then I can take the users input, get their response to the questions and print it out to the console.
+- After I successfully have this printed out to the console I want to give the total amount of reps, I would do this by multiplying reps x sets.
+- Once all output is perfect and just how I want it, im going to make the function that prints all console output to a text file within the project.
+- I will then add tests, find any room for Exceptions and clean up my project.
+- I can always expand on this, I have other ideas to add like a calorie tracker but that will come in the future.
 
 I am starting off with making my three classes named "Main", "TrainingExercises" and "TrainingTracker". The main
 will be for calling methods, I will have TrainingExercises for my variables and getters and setters adn the
 TrainingTracker will be where I make most of my methods and other objects.
 
-On line 11 in TrainingTracker I used the localDate import to retrieve the local date. I did this so we know when
+On line 11 in TrainingTracker I used the localDate import to retrieve the local date. I did this, so we know when
 exactly was the workout, and it makes the files easier to place in order. I then followed up the localDate import
 with the DateTimeFormatter import. Here I set the default pattern of (mm / dd / yyyy) to (dd / mm / yyyy).
 In this block of code I also made the variable "currentDate" carry the format I made with the current date.
