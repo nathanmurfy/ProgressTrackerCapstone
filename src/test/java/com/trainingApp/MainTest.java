@@ -20,7 +20,7 @@ class MainTest {
 
 //    @Test
 //    public void checkingOutputTxtTest() {
-//        String output = Main.extracted();
+//        String output = Main.extracted("error printing to file");
 //        assertTrue(output.contains("Output.txt"));
 //    }
 }
