@@ -45,20 +45,20 @@ public class Main {
 
         System.out.println(output);
 
-        // Printing to console if the output successfully printed to the file
+
+        extracted(output);
+    }
+    public static String getOutput(int reps, int sets) {
+        return "The total amount was: " + reps * sets + " reps" + "\n";
+    }
+    // Printing to console if the output successfully printed to the file
+    public static void extracted(String output) {
         try {
             System.out.println(TrainingTracker.printer(output));
         } catch (Exception e) {
             System.out.println("error printing to file");
             System.out.println("error was: " + e.getMessage());
         }
-
-
     }
-
-    public static String getOutput(int reps, int sets) {
-        return "The total amount was: " + reps * sets + " reps" + "\n";
-    }
-
 
 }
