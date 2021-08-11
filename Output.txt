@@ -1,5 +1,5 @@
-The exercise you did was: bench press
+The exercise you did was: bench
 You weight you did was: 100 KG
-You amount of reps you did was: 3 reps
-The amount of sets you did was: 4 sets
-The total amount was: 12 reps
+You amount of reps you did was: 20 reps
+The amount of sets you did was: 10 sets
+The total amount was: 200 reps
